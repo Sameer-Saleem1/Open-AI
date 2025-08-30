@@ -1,6 +1,6 @@
 import { FiSearch, FiSidebar } from "react-icons/fi";
 
-export default function Topbar({ setSidebarOpen }) {
+export default function Topbar({ onToggleSidebar }) {
   return (
     <header className="fixed inset-x-0 top-0 z-50  border-neutral-200 bg-white backdrop-blur">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
@@ -11,7 +11,7 @@ export default function Topbar({ setSidebarOpen }) {
             className="sm-hidden text-xl ml-8 text-neutral-900 opacity-50 transition-opacity
            duration-300 ease-in-out hover:opacity-100 cursor-pointer"
           >
-            <FiSidebar onClick={setSidebarOpen} />
+            <FiSidebar onClick={onToggleSidebar} />
           </div>
         </div>
 
