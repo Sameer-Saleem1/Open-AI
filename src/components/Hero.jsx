@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Hero({ children }) {
   return (
-    <section className="h-105 md:h-130 flex items-start sm:items-center">
+    <section className="h-130 flex items-start sm:items-center">
       <div className="w-full mx-auto max-w-5xl text-center pt-16 sm:pt-0">
         <motion.h1
           initial={{ opacity: 0, y: 12 }}

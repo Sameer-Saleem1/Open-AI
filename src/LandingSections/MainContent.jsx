@@ -16,7 +16,7 @@ export default function MainContent() {
             className=" rounded-lg bg-[url('./assets/gpt-bg.jpg')] bg-no-repeat bg-center bg-cover
           flex justify-center items-center text-white hover:cursor-pointer min-h-[300px] lg:min-h-[500px]"
           >
-            <h1 className="text-5xl sm:text-7xl lg:text-9xl font-bold text-center transform transition-transform duration-300 hover:scale-110">
+            <h1 className="text-7xl lg:text-9xl font-bold text-center transform transition-transform duration-300 hover:scale-110">
               GPT-5
             </h1>
           </div>
