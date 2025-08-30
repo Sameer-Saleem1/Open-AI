@@ -1,9 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Topbar from "../components/TopBar";
 import Sidebar from "../components/SideBar";
 
 export default function MainLayout({ children }) {
-  const [sidebarOpen, setSidebarOpen] = useState(true); // used for BOTH desktop + mobile
+  const [sidebarOpen, setSidebarOpen] = useState(true);
+
+  useEffect(() => {
+    if (window.innerWidth >= 1024) {
+      setSidebarOpen(true);
+    } else {
+      setSidebarOpen(false);
+    }
+  }, []);
 
   return (
     <div className="min-h-screen">
