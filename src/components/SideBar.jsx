@@ -28,16 +28,13 @@ export default function Sidebar({ sidebarOpen, onClose }) {
           transition={{ duration: 0.3, ease: "easeInOut" }}
           className="flex-1 overflow-y-auto px-6 py-6"
         >
-          <ul className="space-y-2">
+          <ul className="space-y-1 pt-20">
             {LINKS.map((label) => (
               <li
                 key={label}
-                className="pl-2 py-2 rounded-lg hover:bg-neutral-100"
+                className="pl-2 py-2 text-sm rounded-lg text-gray-800  hover:bg-neutral-100"
               >
-                <a
-                  href="#"
-                  className="text-[15px] text-neutral-800 hover:text-black"
-                >
+                <a href="#" className="text-[15px]  hover:text-black">
                   {label}
                 </a>
               </li>

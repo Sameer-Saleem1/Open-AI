@@ -52,8 +52,8 @@ export default function NewsSection() {
   return (
     <section className="p-4">
       <div className="flex justify-between">
-        <h2 className="text-xl font-bold mb-4">Latest News</h2>
-        <p>View all</p>
+        <h2 className="text-xl mb-4">Latest News</h2>
+        <p className="cursor-pointer">View all</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {newsData.map(({ id, image, title, date, type }) => (
@@ -63,8 +63,6 @@ export default function NewsSection() {
               alt={title}
               className="w-50 h-50 object-cover rounded-md flex-shrink-0"
             />
-
-            {/* Text container takes the remaining width */}
             <div className="ml-4 justify-center gap-y-5 flex flex-col  flex-1">
               <h3 className="font-semibold text-gray-800 text-base leading-snug break-words">
                 {title}

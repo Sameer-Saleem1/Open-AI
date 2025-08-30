@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Topbar from "../components/Topbar";
 import Sidebar from "../components/SideBar";
+import Footer from "../components/Footer";
 
 export default function MainLayout({ children }) {
   const [sidebarOpen, setSidebarOpen] = useState(true); // used for BOTH desktop + mobile
