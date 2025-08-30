@@ -38,17 +38,20 @@ export default function MainContent() {
           </div>
         </div>
 
-        <form className="fixed bottom-6 left-1/2 z-50">
+        <form className="fixed bottom-6 md:left-1/2 left-1/4 z-50">
           {" "}
           <input
             type="text"
             placeholder="Ask ChatGPT"
-            className=" bg-neutral-100 placeholder:text-[15px] hover:bg-neutral-200 outline-none text-neutral-800 p-4 rounded-full shadow-lg transition-all duration-300 transform focus-within:w-96 mx-auto"
+            className=" bg-neutral-100 placeholder:text-[15px]
+             hover:bg-neutral-200 outline-none text-neutral-800 p-4 rounded-full shadow-lg
+             transition-all duration-300 transform focus-within:w-auto mx-auto md:focus-within:w-96"
           />{" "}
           <button
             type="submit"
             aria-label="Send"
-            className="absolute top-1/5 right-2 flex items-center p-2 rounded-full bg-neutral-500 justify-center hover:bg-neutral-400 transition "
+            className="absolute top-1/5 right-2 flex items-center p-2 rounded-full
+             bg-neutral-500 justify-center hover:bg-neutral-400 transition "
           >
             <FiArrowUp className="text-neutral-300 text-xl" />{" "}
           </button>{" "}
