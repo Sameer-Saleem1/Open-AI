@@ -100,7 +100,7 @@ export default function Footer() {
   return (
     <footer className="bg-white border-gray-200 pt-12">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-y-6 gap-x-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-y-2 md:gap-y-6 gap-x-3 md:gap-x-5">
           {footerData.map((section, index) => (
             <div key={index}>
               <h3 className=" text-neutral-500 font-semibold text-sm mb-2">

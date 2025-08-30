@@ -25,7 +25,7 @@ export default function Home() {
         value={query}
         onChange={setQuery}
         onSubmit={handleQuerySubmit}
-        placeholder="Plan a surf trip to Costa Rica in August"
+        placeholder="Plan a trip to Naran in August"
       />
       <div className=" md:w-1/2 md:mx-auto flex justify-center items-center ">
         <SuggestionPills items={SUGGESTIONS} onPick={handlePillClicked} />
